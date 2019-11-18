@@ -1,0 +1,992 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 13px;
+}
+body{
+    background: #FFB9C6;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    width: 80vw;
+    /* height: 90vh; */
+    background: #E9ECF1;
+    margin: 10vh auto;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+.logo-top, .logo-bottom{
+    margin-top: .2rem;
+}
+.logo-top{
+    width: 1.5rem;
+    height: .5rem;
+    background-image: linear-gradient(to right, #3B52E7, #9D83FB);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.logo-bottom{
+    width: .6rem;
+    height: .6rem;
+    background-color: #3B52E7;
+    border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+}
+.navbar ul{
+   display: flex;
+   margin-top: .5rem; 
+}
+.navbar ul>li{
+    list-style-type: none;
+    margin-right: 3rem;
+}
+.navbar ul>li>a{
+    text-decoration: none;
+    color: #c3c4c4;
+}
+.navbar ul>li>a.active{
+    position: relative;
+    color: black;
+    font-weight: bold;
+}
+.navbar ul>li>a.active::after{
+    content: '';
+    position: absolute;
+    top: 1.9rem;
+    bottom: 0;
+    left: .5rem;
+    width: 80%;
+    height: .2rem;
+    background: #3B52E7;
+    
+}
+.notification{
+    display: flex;
+}
+.notification img{
+    width: 2rem;
+    height: 2rem;
+    margin:0 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+/* ================ budget section ================== */
+/* ================ budget section ================== */
+.main-section-one{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.budget{
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.budget .gear{
+    position: absolute;
+    top: -1rem;
+    right: -.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #3B52E7;
+    color: white;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.budget .gear p{
+    font-size:2rem;
+    text-align: center;
+}
+.budget >.cricle-one{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    margin: 1rem auto;
+    border: 2px solid #EDEEF3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.budget .cricle-one::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: .4rem solid red;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.circle-two{
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    margin: .9rem auto;
+    border: 2px solid #EDEEF3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.circle-two::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: .4rem solid blue;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.circle-content{
+    margin: 2.5rem auto;
+}
+.circle-content h2{
+    color: #FF7174;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    margin: .6rem auto;
+}
+.circle-content p{
+    color: #AFB2B6;
+}
+
+/* ================ deposit section ================== */
+/* ================ deposit section ================== */
+.deposit{
+    display: flex;
+    flex-direction: column;
+}
+.deposit-header{
+    display: flex;
+    justify-content: space-between;
+}
+.deposit-header-left{
+    display: flex;
+    position: relative;
+}
+.deposit-header-left::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -0.8rem;
+    bottom: 0;
+    height: 3rem;
+    width: .08rem;
+    background-color: #D6DADF;
+}
+.deposit-header-left small{
+    font-size: 1.5rem;
+}
+.deposit-header-left h1{
+    font-size: 3rem;
+    letter-spacing: .2rem;
+}
+.deposit-header-right small{
+    color: #A4A8AD;
+}
+.deposit-header-right h2{
+    letter-spacing: .2rem;
+    font-weight: normal;
+}
+.btn-wrapper{
+    margin-top: 2rem;
+}
+.btn{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.btn:last-child{
+    margin-right: 0;
+}
+.btn-budget{
+    padding: .7rem 5rem .7rem 1rem;
+    background-color: #3B52E7;
+    color: white;
+}
+.btn-transfer, .btn-request{
+    background-color: white;
+    padding: .7rem 2rem;
+    color: #ABABAB;
+}
+
+.monthly-expenses-header{
+    display: flex;
+    justify-content: space-between;
+}
+.monthly-expenses-header-right{
+    padding: 0 0 0 5rem;
+}
+.blue{
+    position: relative;
+    width: 1.7rem;
+    height: .7rem;
+    background-color: #3B52E7;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.white{
+    position: relative;
+    top: -.85rem;
+    left: -.1rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* ================ expenses section ================== */
+/* ================ expenses section ================== */
+.monthly-expenses-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first{
+    position: relative;
+    width: .6rem;
+    height: 5rem;
+    background: #B1B8CA;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.first::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2rem;
+    background-color: #F881AE;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.second{
+    position: relative;
+    width: .6rem;
+    height: 5rem;
+    background-color: #B1B8CA;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.second::before{
+    position: absolute;
+    content: '';
+    top: 1.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5rem;
+    background-color: #2F394F;
+}
+.second::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5rem;
+    background-color: #F881AE;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+.third{
+    position: relative;
+    width: .6rem;
+    height: 5rem;
+    background-color: #2F394F;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.third::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5rem;
+    background-color: #B1B8CA;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.fourth{
+    position: relative;
+    width: .6rem;
+    height: 5rem;
+    background-color: #2F394F;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.fourth::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2rem;
+    background-color: #F881AE;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.fifth{
+    position: relative;
+    width: .6rem;
+    height: 5rem;
+    background-color: #B1B8CA;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.fifth::before{
+    position: absolute;
+    content: '';
+    top: 1.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5rem;
+    background-color: #2F394F;
+}
+.fifth::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5rem;
+    background-color: #F881AE;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+.sixth{
+    position: relative;
+    width: .6rem;
+    height: 5rem;
+    background: #B1B8CA;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.sixth::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4rem;
+    background-color: #F881AE;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+/* ================ expenses section ================== */
+/* ================ expenses section ================== */
+.main-section-two{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 2rem;
+}
+.payoneer, .cdn-bank, .paypal, .instant-money{
+    position: relative;
+    padding: 1rem;
+    width: 15rem;
+    height: 20rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 12px 1px 35px -25px rgba(0, 0, 0, 0.51);
+}
+
+/* ================ payoneer card section ================== */
+/* ================ payoneer card section ================== */
+.payoneer-card{
+    position: absolute;
+    z-index: 2;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 13rem;
+    height: 8rem;
+    margin: 0 auto;
+    background-color: #FF93A8;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 12px 20px 35px -25px #FF93A8;
+    color: white;
+}
+.payoneer-card::after{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 1rem;
+    bottom: 0;
+    width: 4em;
+    height: 8rem;
+    margin: 0 auto;
+    background-color: #FF9DB4;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.payoneer-balance{
+    margin: 8rem auto 0;
+    width: 13rem;
+}
+.payoneer-balance small{
+    text-transform: uppercase;
+    color: #A7AAAF;
+    letter-spacing: .2rem;
+}
+.payoneer-balance h2{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.payoneer-balance h2>span{
+   font-weight: normal;
+}
+.payoneer-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 13rem;
+    margin: 1rem auto 0;
+}
+.payoneer-footer small{
+    color: #B1B3B8;
+}
+.payoneer-footer h2{
+    margin-top: .5rem;
+}
+.payoneer .bottom-circle{
+    background: #F881AE;
+}
+.payoneer .card-text-circle{
+    position: relative;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    background-image: radial-gradient(#FFC8D3, #FFB3C3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.payoneer .card-text-circle::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -.6rem;
+    bottom: 0;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgb(240, 171, 186);
+    border-radius: 50%;
+    background-image: radial-gradient(#FFC8D3, #FFB3C3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+/* ================ cdn bank cards section ================== */
+/* ================ cdn bank cards section ================== */
+.cdn-bank-card{
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 13rem;
+    height: 8rem;
+    margin: 0 auto;
+    background-color: #B1B8CA;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 12px 20px 35px -25px #B1B8CA;
+    color: white;
+}
+.cdn-bank-balance{
+    margin: 8rem auto 0;
+    width: 13rem;
+}
+.cdn-bank-balance small{
+    text-transform: uppercase;
+    color: #A7AAAF;
+    letter-spacing: .2rem;
+}
+.cdn-bank-balance h2{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.cdn-bank-balance h2>span{
+   font-weight: normal;
+}
+.cdn-bank-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 13rem;
+    margin: 1rem auto 0;
+}
+.cdn-bank-footer small{
+    color: #B1B3B8;
+}
+.cdn-bank-footer h2{
+    margin-top: .5rem;
+}
+.cdn-bank .bottom-circle{
+    background: #3A51E5;
+}
+.cdn-bank .card-text-circle{
+    position: relative;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    background-image: radial-gradient(#CCD0DD, #CCD0DD);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.cdn-bank .card-text-circle::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -.6rem;
+    bottom: 0;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgb(191, 195, 207);
+    border-radius: 50%;
+    background-image: radial-gradient(#CCD0DD, #CCD0DD);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* ================ paypal cards section ================== */
+/* ================ paypal cards section ================== */
+.paypal-card{
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 13rem;
+    height: 8rem;
+    margin: 0 auto;
+    background-color: #2F394F;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 12px 20px 35px -25px #2F394F;
+    color: white;
+}
+.paypal-balance{
+    margin: 8rem auto 0;
+    width: 13rem;
+}
+.paypal-balance small{
+    text-transform: uppercase;
+    color: #A7AAAF;
+    letter-spacing: .2rem;
+}
+.paypal-balance h2{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.paypal-balance h2>span{
+   font-weight: normal;
+}
+.paypal-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 13rem;
+    margin: 1rem auto 0;
+}
+.paypal-footer small{
+    color: #B1B3B8;
+}
+.paypal-footer h2{
+    margin-top: .5rem;
+}
+.paypal .bottom-circle{
+    background: #2F394F;
+}
+.paypal .card-text-circle{
+    position: relative;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    background-image: radial-gradient(#5B6374, #5B6374);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.paypal .card-text-circle::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -.6rem;
+    bottom: 0;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgb(82, 88, 102);
+    border-radius: 50%;
+    background-image: radial-gradient(#5B6374, #5B6374);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* ================ general section ================== */
+/* ================ general section ================== */
+small.top{
+    display: block;
+    margin-left: -1rem;
+    margin-bottom: 1rem;
+    color: #A5A9AF;
+}
+small.bottom{
+    display: block;
+    margin-left: -.5rem;
+    margin-top: 1rem;
+    color: #A5A9AF;
+}
+.monthly-expenses-header-left, .monthly-expenses-header-right{
+    margin: 0 0 2rem 0;
+}
+.card-number, .card-text{
+    margin: 1.5rem;
+}
+.card-number p{
+    letter-spacing: .1rem;
+    font-size: .8rem;
+}
+.card-text{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.card-text h4{
+    letter-spacing: .1rem;
+}
+.recieved-bar{
+    position: relative;
+    width: 5rem;
+    height: .3rem;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #39DAD1, #4B87FD);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.recieved-bar::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1.5rem;
+    height: .3rem;
+    background-color: #E7E7E7;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.spent-bar{
+    position: relative;
+    width: 5rem;
+    height: .3rem;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #FF9F8F, #FF557C);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.spent-bar::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1.5rem;
+    height: .3rem;
+    background-color: #E7E7E7;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.bottom-circle{
+    margin: 3.5rem auto 0 auto;
+    color: white;
+    width: 2rem;
+    text-align: center;
+    height: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.bottom-circle p{
+   padding-top: .5rem;
+   cursor: pointer;
+}
+
+/* ================ instant money cards section ================== */
+/* ================ instant money cards section ================== */
+.instant-money{
+    background-color: #3B52E7;
+    color: white;
+}
+.instant-money-card{
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 0 0 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.instant-money-card img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.instant-money-card-name h2{
+    margin-bottom: .5rem;
+    letter-spacing: .1rem;
+}
+.instant-money-card-content{
+    margin: 4rem 1rem 0 1rem;
+}
+.instant-money-card-desc{
+    margin-top: 2rem;
+}
+.instant-money-card-desc p{
+    letter-spacing: .1rem;
+    font-weight: normal;
+    font-size: .8rem;
+    line-height: 1.5rem;
+}
+
+.instant-money-card-img{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.instant-money-card-img img{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.instant-money-card-img .image-circle{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid white;
+    background-color: #FF822E;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.instant-money-card-img .image-circle p{
+    margin-top: .5rem;
+    margin-left: .2rem;
+    font-size: .8rem;
+}
+
+
+/* ================ media query ================== */
+/* ================ media query ================== */
+@media only screen and (max-width: 600px) {
+    .main-section-one{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .main-section-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .payoneer, .cdn-bank, .paypal, .instant-money{
+        position: relative;
+        padding: 1rem;
+        margin-bottom: 4rem;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .deposit-header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .deposit-header-left{
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .deposit-header-right{
+        margin: auto;
+        margin-top: 2rem;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .btn-wrapper{
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .btn{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .btn:nth-child(2), .btn:nth-child(3){
+        margin-left: 1.5rem;
+    }
+    .budget{
+        margin: auto;
+    }
+    .monthly-expenses-header-left, .monthly-expenses-header-right{
+        margin: 2rem 0;
+    }
+}
